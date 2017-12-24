@@ -2,4 +2,4 @@
 nO nO nO  
 My nane Natthida
 
-\nI'm come from thailand.
+I'm come from thailand.
