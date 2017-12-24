@@ -7,23 +7,28 @@ import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
 cl.login(qr=True)
+#cl.login(token="")
 cl.loginResult()
 
-ki = LINETCR.LINE() #Zorro
-ki.login(qr=True)
-ki.loginResult()
+#ki = LINETCR.LINE() #Zorro
+#ki.login(qr=True)
+#ki.login(token="")
+#ki.loginResult()
 
-kk = LINETCR.LINE() #Sanji
-kk.login(qr=True)
-kk.loginResult()
+#kk = LINETCR.LINE() #Sanji
+#kk.login(qr=True)
+#kk.login(token="")
+#kk.loginResult()
 
-kc = LINETCR.LINE() #Ussop
-kc.login(qr=True)
-kc.loginResult()
+#kc = LINETCR.LINE() #Ussop
+#kc.login(qr=True)
+#kc.login(token="")
+#kc.loginResult()
 
-ks = LINETCR.LINE() #Chooper
-ks.login(qr=True)
-ks.loginResult()
+#ks = LINETCR.LINE() #Chooper
+#ks.login(qr=True)
+#ks.login(token="")
+#ks.loginResult()
 
 print "login success plak"
 reload(sys)
@@ -56,7 +61,7 @@ Owner : 💮_ⓓⓐⓝⓐⓘ_💮
     ✈✈  Ľ¡Ŋ₤βΦŦ  ✈✈
 -==================-
 """
-KAC=[cl,ki,kk,kc,ks]
+KAC=[cl]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF3=[cl,ki,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
@@ -68,13 +73,13 @@ KAC=[cl,ki,kk,kc,ks]
 #DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] Udah Ga Kepake(Boleh di apus)
 #DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] Udah Ga Kepake(Boleh di apus)
 mid = cl.getProfile().mid #Luffy
-Amid = ki.getProfile().mid #Zorro
-Bmid = kk.getProfile().mid #Sanji
-Cmid = kc.getProfile().mid #Ussop
-Dmid = ks.getProfile().mid #Chooper
+#Amid = ki.getProfile().mid #Zorro
+#Bmid = kk.getProfile().mid #Sanji
+#Cmid = kc.getProfile().mid #Ussop
+#Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["ub3db3cc8a5db36da5186eb52d14bfaa9","u47c8bcc7bbca8bc0028dfdf00f3efafd","u4f8709f6222b794c1f03e7e04ea20277","u531f68025e1b287f71b64588a8b11875","u6fe16c90ea1b71404b429593539bc7b3","ua4829d9a978ec3833141b1d72256b7e7","ud13d496b0970c090ed4be6fac855985f","u9dd23f96c172505900d67c03a0166225","ub3d561a2c32242e74f2cd53b4d72da29","u33dbd0d185b9de316e3d2b434ffcd7ee","ub230bab8d656023eb2fe58bf8d84a54d","u7ad11ac73ff71349a735bf8e2ab4664c","u487e83e3f7428c01355acf5fdeff897f","u841a9551accd88ed740deef99f35a097","u433c311e4f6cacfc1034549dbddb8f8b","u4d0c7094d063ef17a32a2e0872f9901a","u0c91735bba7a6dc83b67394be3802f0e","u4a251dff1ea46edd68a601ebd6232256","u6341911d93b68dd732f58e4e9957a885","u9d021cd00684df730dd3d5fdf2cf2466","u7143f16aebb8e582f33094c52184368d","u8b01cb5a22358094bf3e01a506dfd254","uf0d90325e54613d259365b303e115885","u623c1945cdb470707ccdd8ce2de566d1","ue206f91454dd692fe235c03d59ba98fc","u8d503549cead54b326e68ee191fc18aa"]
+admin=["ub3db3cc8a5db36da5186eb52d14bfaa9"]
 owner=["ub3db3cc8a5db36da5186eb52d14bfaa9"]
 whitelist=["ub3db3cc8a5db36da5186eb52d14bfaa9"]
 
