@@ -449,6 +449,3 @@ def bot(op):
           cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\nโอกาสหน้าเจอกันใหม่นะ ")
           print "MEMBER HAS LEFT THE GROUP"
 #------------------------
-
-#--------------------
-
