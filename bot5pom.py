@@ -452,8 +452,3 @@ def bot(op):
 
 #--------------------
 
-
-    for Op in Ops:
-        if (Op.type != OpType.END_OF_OPERATION):
-            cl.Poll.rev = max(cl.Poll.rev, Op.revision)
-            bot(Op)
