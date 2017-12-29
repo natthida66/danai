@@ -10,25 +10,25 @@ cl.login(qr=True)
 #cl.login(token="")
 cl.loginResult()
 
-#ki = LINETCR.LINE() #Zorro
-#ki.login(qr=True)
+ki = LINETCR.LINE() #Zorro
+ki.login(qr=True)
 #ki.login(token="")
-#ki.loginResult()
+ki.loginResult()
 
-#kk = LINETCR.LINE() #Sanji
-#kk.login(qr=True)
+kk = LINETCR.LINE() #Sanji
+kk.login(qr=True)
 #kk.login(token="")
-#kk.loginResult()
+kk.loginResult()
 
-#kc = LINETCR.LINE() #Ussop
-#kc.login(qr=True)
+kc = LINETCR.LINE() #Ussop
+kc.login(qr=True)
 #kc.login(token="")
-#kc.loginResult()
+kc.loginResult()
 
-#ks = LINETCR.LINE() #Chooper
-#ks.login(qr=True)
+ks = LINETCR.LINE() #Chooper
+ks.login(qr=True)
 #ks.login(token="")
-#ks.loginResult()
+ks.loginResult()
 
 print "login success plak"
 reload(sys)
@@ -61,7 +61,7 @@ Owner : 💮_ⓓⓐⓝⓐⓘ_💮
     ✈✈  Ľ¡Ŋ₤βΦŦ  ✈✈
 -==================-
 """
-KAC=[cl]
+KAC=[cl,ki,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF3=[cl,ki,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
@@ -73,10 +73,10 @@ KAC=[cl]
 #DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] Udah Ga Kepake(Boleh di apus)
 #DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] Udah Ga Kepake(Boleh di apus)
 mid = cl.getProfile().mid #Luffy
-#Amid = ki.getProfile().mid #Zorro
-#Bmid = kk.getProfile().mid #Sanji
-#Cmid = kc.getProfile().mid #Ussop
-#Dmid = ks.getProfile().mid #Chooper
+Amid = ki.getProfile().mid #Zorro
+Bmid = kk.getProfile().mid #Sanji
+Cmid = kc.getProfile().mid #Ussop
+Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
 admin=["ub3db3cc8a5db36da5186eb52d14bfaa9"]
@@ -201,7 +201,7 @@ def bot(op):
               pass
             else:
               cl.cancelGroupInvitation(op.param1, gMembMids)
-              cl.sendText(op.param1, "คุณไม่ได้รับสิทธิ์ในการเชิญ\nฉันจึงขอยกเลิก😛")
+              cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\nคุณไม่ได้รับสิทธิ์ในการเชิญ ฉันจึงขอยกเลิก😛")
         #------Cancel Invite User Finish------#
 
         if op.type == 13:
