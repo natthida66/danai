@@ -4,10 +4,10 @@ import json, time, random, tempfile, os, sys
 from gtts import gTTS
 from googletrans import Translator
 
-client = LineClient()
-client = LineClient(id='EMAIL', passwd='PASSWORD')
+#client = LineClient()
+#client = LineClient(id='EMAIL', passwd='PASSWORD')
 #client = LineClient(authToken='AUTHTOKEN')
-client.log("Auth Token : " + str(client.authToken))
+#client.log("Auth Token : " + str(client.authToken))
 
 cl = LineClient() #Zorro
 cl.= LineClient(id='EMAIL', passwd='PASSWORD')
