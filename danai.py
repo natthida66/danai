@@ -1,38 +1,42 @@
 # -*- coding: utf-8 -*-
+from linepy import *
+import json, time, random, tempfile, os, sys
+from gtts import gTTS
+from googletrans import Translator
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
-from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re,os,subprocess
+client = LineClient()
+client = LineClient(id='EMAIL', passwd='PASSWORD')
+#client = LineClient(authToken='AUTHTOKEN')
+client.log("Auth Token : " + str(client.authToken))
 
-cl = LINETCR.LINE() #Luffy
-cl.login(qr=True)
+cl = LineClient() #Zorro
+cl.= LineClient(id='EMAIL', passwd='PASSWORD')
 #cl.login(token="")
 cl.loginResult()
 
-ki = LINETCR.LINE() #Zorro
-ki.login(qr=True)
+ki = LineClient() #Zorro
+ki.= LineClient(id='EMAIL', passwd='PASSWORD')
 #ki.login(token="")
 ki.loginResult()
 
-kk = LINETCR.LINE() #Sanji
-kk.login(qr=True)
+kk = LineClient() #Sanji
+kk.= LineClient(id='EMAIL', passwd='PASSWORD')
 #kk.login(token="")
 kk.loginResult()
 
-kc = LINETCR.LINE() #Ussop
-kc.login(qr=True)
+kc = LineClient() #Ussop
+kc.= LineClient(id='EMAIL', passwd='PASSWORD')
 #kc.login(token="")
 kc.loginResult()
 
-ks = LINETCR.LINE() #Chooper
-ks.login(qr=True)
+ks = LineClient() #Chooper
+ks.= LineClient(id='EMAIL', passwd='PASSWORD')
 #ks.login(token="")
 ks.loginResult()
 
-print "login success plak"
-reload(sys)
-sys.setdefaultencoding('utf-8')
+channel = LineChannel(client)
+client.log("Channel Access Token : " + str(channel.channelAccessToken))
+
 
 helpMessage ="""─═हई..तุএച้ට௮..ईह═─
 Owner : 💮_ⓓⓐⓝⓐⓘ_💮
